@@ -1,0 +1,30 @@
+---
+- sysctl:
+    name: vm.dirty_ratio
+    value: 30
+    state: present
+    reload: yes
+
+- sysctl:
+    name: vm.swappiness
+    value: 30
+    state: present
+    reload: yes
+
+- sysctl:
+    name: kernel.sched_min_granularity_ns
+    value: 10000000
+    state: present
+    reload: yes
+
+- sysctl:
+    name: kernel.sched_wakeup_granularity_ns
+    value: 15000000
+    state: present
+    reload: yes
+
+- sysctl:
+    name: vm.dirty_background_ratio
+    value: 10
+    state: present
+    reload: yes

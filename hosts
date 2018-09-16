@@ -1,2 +1,6 @@
 [rhel]
-cobbler.pichuang.local
+master[1:3].pichuang.local
+etcd[1:3].pichuang.local
+worker[1:2].pichuang.local
+infra[1:2].pichuang.local
+lb.pichuang.local

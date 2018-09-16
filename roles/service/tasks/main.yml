@@ -1,7 +1,8 @@
 ---
-- name: Stop unnecessary services
+- name: Start and enable unnecessary services
   systemd:
     name: "{{ item }}"
-    state: stopped
+    state: started
+    enabled: yes
   with_items:
-    - tuned
+    - chronyd
