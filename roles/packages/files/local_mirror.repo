@@ -1,0 +1,30 @@
+[mirror-rhel-7-server-rpms]
+baseurl = http://bastion.pichuang.local/rhel-7-server-rpms
+gpgcheck = 0
+name = Local rhel-7-server-rpms
+
+[mirror-rhel-7-server-optional-rpms]
+baseurl = http://bastion.pichuang.local/rhel-7-server-optional-rpms
+gpgcheck = 0
+name = Local rhel-7-server-optional-rpms
+
+[mirror-rhel-7-server-extras-rpms]
+baseurl = http://bastion.pichuang.local/rhel-7-server-extras-rpms
+gpgcheck = 0
+name = Local rhel-7-server-extras-rpms
+
+[mirror-rhel-7-server-ose-3.9-rpms]
+baseurl = http://bastion.pichuang.local/rhel-7-server-ose-3.9-rpms
+gpgcheck = 0
+name = Local rhel-7-server-ose-3.9-rpms
+
+[mirror-rhel-7-fast-datapath-rpms]
+baseurl = http://bastion.pichuang.local/rhel-7-fast-datapath-rpms
+gpgcheck = 0
+name = Local rhel-7-fast-datapath-rpms
+
+[mirror-rhel-7-server-3scale-amp-2.2-rpms]
+baseurl = http://bastion.pichuang.local/rhel-7-server-3scale-amp-2.2-rpms
+gpgcheck = 0
+name = Local rhel-7-server-3scale-amp-2.2-rpms
+

@@ -1,0 +1,43 @@
+---
+- name: Remove unneccesary packages
+  yum:
+    name: "{{ item }}"
+    state: absent
+  with_items:
+    - subscription-manager
+    - tuned
+    - postfix
+    - rhn-check
+
+- name: Copy internal only repos
+  copy:
+    src: "{{ item }}"
+    dest: "/etc/yum.repos.d/{{ item }}"
+  with_items:
+    - epel.repo
+    - local_mirror.repo
+
+- name: Upgrade all packages
+  yum:
+    name: '*'
+    state: latest
+
+- name: Install specific packages
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - git
+    - vim
+    - wget
+    - chrony
+
+- name: Install specific packages from EPEL
+  yum:
+    name: "{{ item }}"
+    state: present
+    enablerepo: "epel"
+  with_items:
+    - python2-pip
+    - htop
+

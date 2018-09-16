@@ -1,0 +1,8 @@
+---
+- name: Clone momorc into home directory
+  git:
+    repo: https://github.com/pichuang/momorc
+    version: master
+    dest: ~/.momorc
+    accept_hostkey: yes
+

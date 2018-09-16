@@ -1,0 +1,7 @@
+---
+- name: Stop unnecessary services
+  systemd:
+    name: "{{ item }}"
+    state: stopped
+  with_items:
+    - tuned
